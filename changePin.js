@@ -31,7 +31,6 @@ function pathToChangePin () {
     return;
 }
 
-
 //bank account 
 let bankAccount = [];
 ///add the below in? 
@@ -45,11 +44,11 @@ function Account(pin){
     //add a get balance method etc. 
     }
     
-function createAcct(){
+function changePin(){
 	let pin = parseInt(document.getElementById("pinput").value); 
     for(let i=0; i < bankAccount.length; i++){
-      if( bankAccount[i].pin === pin  ){
-          alert("This account already exists!");
+      if( bankAccount[i].pin != pin  ){
+          //alert("This account already exists!");
           //window.open("atm_menu.html"); 
           //update the page for menu options 
           return; 
@@ -62,7 +61,7 @@ function createAcct(){
   bankAccount.push(newAccount); 
 
   //document.getElementById("account").innerHTML += "New account balance: $" +  newAccount.balance + "  New pin: " + newAccount.pin + "<br>";
-  document.getElementById("account").innerHTML += `New account balance: $${newAccount.balance} New pin: ${newAccount.pin} <br>`;
+  document.getElementById("account").innerHTML += `Your pin number has successfully been changed to ${newAccount.pin}. <br>`;
 
   return; 
 }

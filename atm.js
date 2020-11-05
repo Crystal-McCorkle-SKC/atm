@@ -46,6 +46,10 @@ function enterPin () {
     alert("test! enter pin");
 }
 
+//Add this in even??! 
+let currentAccount;
+
+
 //create array w/ list of objects (pin: and balance:)
 let bankAccounts = [
     //pin
@@ -75,9 +79,7 @@ let bankAccounts = [
     },
   ];
 
-function pathToGetAcct() {
-    window.open("getAcct.html", "_self");
-}
+
 
   
 //getAccount function---use object from Willie's code? 
@@ -90,13 +92,43 @@ function getAcct() {
            //return bankAccounts[i]; 
           }   
         }
-        alert("Invalid Pin! Please try again!"); 
+        alert("Invalid pin! Please try again! Or, click create new account below."); 
+        //instead of the alert box, maybe make all text go away and say 'Oh no, invalid
+        //pin! Please try again or create a new account using the button below. 
+        //make this text appear only if this happens and do it in red w/ a robber?!
+        //going across background
         return; 
+}
+
+function pathToGetAcct() {
+    window.open("getAcct.html", "_self");
+    return; ///???
 }
 
 
 function pathToCreateAcct() {
     window.open("createAcct.html", "_self");
+    return; //????
+}
+
+function pathToDeposit () {
+    window.open("deposit.html", "_self");
+    return;
+}
+
+function pathToWithdrawal () {
+    window.open("withdrawal.html", "_self");
+    return;
+}
+
+function pathToHome () {
+    window.open("index.html", "_self");
+    return;
+}
+
+function pathToChangePin () {
+    window.open("changePin.html", "_self");
+    return;
 }
 
 //just playing
@@ -124,8 +156,8 @@ function options () {
         // balance inquiry, change pin (maybe an exit? option too??)
 }
 
-
-function createAcct () {
+//taking out for now
+/*function createAcct () {
     window.open("createAcct.html", "_self");
     //this will need to add to the bankAccounts array/object below
     //add Willie's Code
@@ -135,12 +167,10 @@ function createAcct () {
               //  } else if ({
                //     createAccount (); //calls the create account function 
                // }
-}
+} */
 
 
-function deposit () {
-    
-}
+
 
 function withdrawal () {
 
