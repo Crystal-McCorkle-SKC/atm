@@ -1,0 +1,22 @@
+body {
+    padding: 20%;
+    text-align: center; 
+    background: url(../atm/fabian-blank-pElSkGRA2NU-unsplash.jpg) center; 
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    position: relative;
+  }
+
+
+.btn-primary {
+    color: #fff;
+    background-color:limegreen;
+    border-color: limegreen; 
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active{
+    color: #fff;
+    background-color: lightgreen;
+    border-color: lightgreen; 
+}
+
